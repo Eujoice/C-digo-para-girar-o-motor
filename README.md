@@ -20,7 +20,7 @@ void setup() {
 void loop() {
 
   int leituraPot = analogRead(pinPot);
-  int velocidade = map(leituraPot, 0, 1023, 0, 255); // Regar de três para conversão de valores
+  int velocidade = map(leituraPot, 0, 1023, 0, 255); // Regra de três para conversão de valores
 
   analogWrite(pinEnable, velocidade);
 
